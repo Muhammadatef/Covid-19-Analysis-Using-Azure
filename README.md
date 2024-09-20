@@ -21,6 +21,8 @@ This project builds a robust data ingestion pipeline using **Azure Data Factory 
     - **Data Flows**
     - **Datasets** and **Linked Services**
     - **Triggers** for automated execution
+      ![Adf](https://github.com/Muhammadatef/Covid-19-Analysis-Using-Azure/blob/main/AzureDataFactory/ADF.jpg)  
+
   - Data transformations handled via:
     - **ADF Mapping Data Flows** for ETL processes.
     - **HDInsight** for big data processing.
@@ -48,6 +50,11 @@ This project builds a robust data ingestion pipeline using **Azure Data Factory 
 
 - **Visualization**: 
   - Interactive **Power BI** dashboards visualize trends in hospital admissions, geography, and demographics.
+ 
+  ![Db1](https://github.com/Muhammadatef/Covid-19-Analysis-Using-Azure/blob/main/images/CovidConfirmedCasesVsDeathsMetrics.png)
+  ![DB2](https://github.com/Muhammadatef/Covid-19-Analysis-Using-Azure/blob/main/images/CovidTestingMetrics.png)
+
+
 
 - **CI/CD Pipelines**: 
   - Fully automated pipelines for development, testing, and production are set up using **Azure DevOps**. ADF is integrated with **Git** via **Azure Repos** for version control and seamless deployment across environments.
