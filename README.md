@@ -5,7 +5,7 @@ This project builds a robust data ingestion pipeline using **Azure Data Factory 
 
 ## Architecture
 
-![System Architecture](https://github.com/Muhammadatef/Covid-19-Analysis-Using-Azure/blob/master/images/architecture.png)  
+![System Architecture](https://github.com/Muhammadatef/Covid-19-Analysis-Using-Azure/blob/main/images/architecture.png)  
 
 - **Data Sources**: 
   - CSV files in **Azure Blob Storage**.
