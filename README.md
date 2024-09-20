@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Covid-19-Analysis-Using-Azure
-=======
 # Azure Data Factory COVID-19 Analysis
 
 ## Overview
@@ -8,8 +5,7 @@ This project builds a robust data ingestion pipeline using **Azure Data Factory 
 
 ## Architecture
 
-![System Architecture](system_architecture_image_url)  
-![CI/CD Architecture](cicd_architecture_image_url)
+![System Architecture](https://github.com/Muhammadatef/Covid-19-Analysis-Using-Azure/blob/master/images/architecture.png)  
 
 - **Data Sources**: 
   - CSV files in **Azure Blob Storage**.
@@ -55,6 +51,9 @@ This project builds a robust data ingestion pipeline using **Azure Data Factory 
 
 - **CI/CD Pipelines**: 
   - Fully automated pipelines for development, testing, and production are set up using **Azure DevOps**. ADF is integrated with **Git** via **Azure Repos** for version control and seamless deployment across environments.
+ 
+  - ![CI/CD Architecture](https://github.com/Muhammadatef/Covid-19-Analysis-Using-Azure/blob/master/images/cicd.png)
+
 
 ## Prerequisites
 
@@ -74,7 +73,8 @@ This project builds a robust data ingestion pipeline using **Azure Data Factory 
 ## Serving Layer
 
 To view the dashboards, follow this link:  
- ``` https://project.novypro.com/tZnrYJ
+ https://project.novypro.com/tZnrYJ
+ 
  
  
 ## Getting Started
@@ -114,4 +114,4 @@ For inquiries or feedback, feel free to reach out:
 **Mohamed Atef Fahmy**  
 Email: [muhamedfahmy7474@gmail.com](mailto:muhamedfahmy7474@gmail.com)
 
->>>>>>> master
+
