@@ -1,0 +1,18 @@
+{
+    "name": "ls_http_open_data_ecdc_europe_eu",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "parameters": {
+            "sourceBaseURL": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "HttpServer",
+        "typeProperties": {
+            "url": "@{linkedService().sourceBaseURL}",
+            "enableServerCertificateValidation": true,
+            "authenticationType": "Anonymous"
+        }
+    }
+}

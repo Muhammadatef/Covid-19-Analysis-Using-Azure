@@ -1,0 +1,25 @@
+{
+    "name": "ds_population_raw_tsv",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_adls_coviddl",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "population_by_age_tsv",
+                "folderPath": "population",
+                "fileSystem": "raw"
+            },
+            "columnDelimiter": "\t",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

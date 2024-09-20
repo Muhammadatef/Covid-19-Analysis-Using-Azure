@@ -1,0 +1,68 @@
+{
+    "name": "pl_sqlize_hospital_admissions",
+    "properties": {
+        "activities": [
+            {
+                "name": "CopyDailyHospitalAdmissions",
+                "type": "Copy",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "source": {
+                        "type": "DelimitedTextSource",
+                        "storeSettings": {
+                            "type": "AzureBlobFSReadSettings",
+                            "recursive": true,
+                            "wildcardFileName": "*",
+                            "enablePartitionDiscovery": false
+                        },
+                        "formatSettings": {
+                            "type": "DelimitedTextReadSettings"
+                        }
+                    },
+                    "sink": {
+                        "type": "AzureSqlSink",
+                        "preCopyScript": "TRUNCATE TABLE\ncovid_reporting.hospital_admissions_daily",
+                        "writeBehavior": "insert",
+                        "sqlWriterUseTableLock": false,
+                        "disableMetricsCollection": false
+                    },
+                    "enableStaging": false,
+                    "translator": {
+                        "type": "TabularTranslator",
+                        "typeConversion": true,
+                        "typeConversionSettings": {
+                            "allowDataTruncation": true,
+                            "treatBooleanAsNumber": false
+                        }
+                    }
+                },
+                "inputs": [
+                    {
+                        "referenceName": "ds_processed_daily_hospital_admissions",
+                        "type": "DatasetReference"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "referenceName": "ds_sql_daily_hospital_admissions",
+                        "type": "DatasetReference"
+                    }
+                ]
+            }
+        ],
+        "folder": {
+            "name": "sqlize"
+        },
+        "annotations": [],
+        "lastPublishTime": "2024-09-19T09:10:15Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}

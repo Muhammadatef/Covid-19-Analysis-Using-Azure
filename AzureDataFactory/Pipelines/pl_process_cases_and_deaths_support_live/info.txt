@@ -1,0 +1,6 @@
+selected resource name:		pl_process_cases_and_deaths
+selected resource type:		pipeline
+factory name:			covidreportingproject7422
+factory location:		uaenorth
+subscription id:		b914e946-220b-458e-8443-6664c8164c49
+time of download (UTC):		Wed, 18 Sep 2024 10:35:13 GMT

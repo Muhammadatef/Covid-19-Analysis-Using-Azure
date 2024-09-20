@@ -1,0 +1,6 @@
+selected resource name:		pl_sqlize_hospital_admissions
+selected resource type:		pipeline
+factory name:			covidreportingproject7422
+factory location:		uaenorth
+subscription id:		b914e946-220b-458e-8443-6664c8164c49
+time of download (UTC):		Thu, 19 Sep 2024 14:40:06 GMT
