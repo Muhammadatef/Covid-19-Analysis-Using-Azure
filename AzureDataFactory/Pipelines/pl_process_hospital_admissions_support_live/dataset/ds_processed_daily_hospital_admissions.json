@@ -1,0 +1,24 @@
+{
+    "name": "ds_processed_daily_hospital_admissions",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_adls_coviddl",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "folderPath": "ecdc/daily_hospital_admissions",
+                "fileSystem": "processed"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

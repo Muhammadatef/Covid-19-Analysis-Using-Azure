@@ -1,0 +1,35 @@
+{
+    "name": "pl_process_hospital_admissions",
+    "properties": {
+        "activities": [
+            {
+                "name": "df_processed_hospital_admissions",
+                "description": "Pipeline to ingest the hospital admissions data after transformation to our data lake",
+                "type": "ExecuteDataFlow",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "dataflow": {
+                        "referenceName": "df_transform_hospital_admissions",
+                        "type": "DataFlowReference"
+                    },
+                    "compute": {
+                        "coreCount": 8,
+                        "computeType": "General"
+                    },
+                    "traceLevel": "Fine"
+                }
+            }
+        ],
+        "annotations": [],
+        "lastPublishTime": "2024-09-17T08:24:52Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}
